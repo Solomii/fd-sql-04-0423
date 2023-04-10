@@ -4,12 +4,12 @@ CREATE TABLE "users" (
 	"firstName" VARCHAR(64) NOT NULL CHECK("firstName" !=''),
   "lastName" VARCHAR(64) NOT NULL CHECK("lastName" !=''),
   "email" VARCHAR(256) NOT NULL CHECK("email" !='') UNIQUE,
-  "isMail" BOOLEAN NOT NULL,
+  "isMale" BOOLEAN NOT NULL,
   "birthday" DATE NOT NULL CHECK("birthday"<CURRENT_DATE),
   "height"  NUMERIC(3,2) NOT NULL CHECK("height" >=1.10 AND "height" <2.55)
 );
 
-INSERT INTO "users"("lastName", "firstName", "email", "isMail","birthday", "height") 
+INSERT INTO "users"("lastName", "firstName", "email", "isMale","birthday", "height") 
 VALUES ('Tom', 'Test', 'tom@gamil.com', TRUE, '1992-01-08', 1.70),
 ('Test', 'Test', 'test@gamil.com', TRUE, '1957-09-25', 1.80)
 
