@@ -1,0 +1,15 @@
+{
+  "name": "fd-sql-04-0423",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.10.0"
+  }
+}
